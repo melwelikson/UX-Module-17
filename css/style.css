@@ -25,6 +25,7 @@ color: white;
     align-items: center;
     width: fit-content;
     height: 80vh; /* Adjust the height as needed */
+    padding: 50px;
 }
 
 .photo {
@@ -34,8 +35,9 @@ color: white;
 
 .text {
     flex: 1;
-    padding: 10px; /* Add padding to the text container */
-    margin: 0px; /* Add margin to the text container */
+    padding: 100px; /* Add padding to the text container */
+    padding-top: 100px;
+    margin: 10px; /* Add margin to the text container */
     font-family: 'Gloock', serif;
     font-family: 'Poppins', sans-serif;
 }
@@ -108,6 +110,10 @@ footer {
         background-color: black;
         padding: 20px 30px; /* Adjust the padding as needed */
     }
+
+    nav {
+        padding-right: 10vw;
+    }
     
     .header-left {
         display: flex;
@@ -151,14 +157,23 @@ footer {
     }
     
     .dropdown-content {
-        display: none;
         position: absolute;
         text-align: center;
         background-color: black;
-        max-width: 50px;
         z-index: 1;
         top: 100%; /* Position the dropdown below the link */
         left: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        text-align: center;
+         margin-top: 0px;
+     }
+
+    .dropdown-content li {
+        display: block;
+    
     }
     
     .dropdown-content a {
@@ -167,12 +182,10 @@ footer {
         text-decoration: none;
         display: block;
         text-align: center;
+
     }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-        text-align: center;
-    }
+
+
 
     h5 {font-family: 'Gloock', serif;
         font-size: 30px;}
