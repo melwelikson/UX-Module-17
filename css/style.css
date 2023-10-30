@@ -100,7 +100,7 @@ footer {
 
 
     .navigation {
-        position: fixed;
+        position: absolute, fixed;
         top: 0;
         width: 100%;
         display: flex;
@@ -112,7 +112,8 @@ footer {
     }
 
     nav {
-        padding-right: 10vw;
+        padding-right: 5vw;
+     
     }
     
     .header-left {
@@ -141,6 +142,7 @@ footer {
     
     .nav-center a {
         text-decoration: none;
+
         color: white;
         text-align: center;
     }
@@ -149,12 +151,15 @@ footer {
         text-decoration: underline;
         text-align: center;
     }
+
+    .nav-center .dropdown:hover .dropdown-content {
+        display: block;
+    }
     
     /* Dropdown styles */
     .dropdown {
         position: relative;
         text-align: center;
-        display: inline;
     }
     
     .dropdown-content {
@@ -166,14 +171,14 @@ footer {
         
     }
 
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content li {
         display: block;
         text-align: center;
          margin-top: 0px;
      }
 
     .dropdown-content li {
-        display: block;
+        display: none;
     
     }
     
@@ -185,7 +190,9 @@ footer {
         text-align: center;
 
     }
-
+    #ABOUT {
+        margin: 50px;
+    }
 
 
     h5 {font-family: 'Gloock', serif;
