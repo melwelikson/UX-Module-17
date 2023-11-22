@@ -1,8 +1,6 @@
 body {
-   
-    background: rgb(88,103,125);
-    background: radial-gradient(circle, rgba(88,103,125,1) 0%, rgba(11,32,64,1) 62%, rgba(0,0,0,1) 100%);
-color: white;
+   color: white;
+   background-color: black;
 };
 
 .inline-block-container {
@@ -27,6 +25,25 @@ color: white;
     height: 80vh; /* Adjust the height as needed */
     padding: 50px;
 }
+
+#instagramCuration{
+    background-color: #73609B;
+    padding: 1%;
+}
+
+
+#caseStudies{
+    background-color: #A7699D;
+    
+}
+
+#research{
+    background-color: #BD8857;
+    padding: 1%;
+}
+
+
+
 
 .photo {
     flex: 1;
@@ -67,19 +84,7 @@ color: white;
     padding: 50px;
 }
 
-footer {
-    background-color: black;
-    text-align: left;
-    padding: 20px; }
-    
 
-    footer ul {
-        display: inline-block;
-        vertical-align: top; 
-    }
-    footer li {
-        padding: 0 15px; 
-    }
 
     .overlay {
         opacity: 0.6; 
@@ -190,13 +195,15 @@ footer {
         text-align: center;
 
     }
+
     #ABOUT {
-        margin: 50px;
+        background-color: #607F9B;
     }
 
 
     h5 {font-family: 'Gloock', serif;
-        font-size: 30px;}
+        font-size: 30px;
+        padding: 5px;}
     
     h6 {font-family: 'Gloock', serif;
     font-size: 16px;}
@@ -217,4 +224,51 @@ footer {
           a:hover {
             color: #8CA9D3;
           }
+
+
+          #sidebar {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        #image-container {
+            flex: 1;
+            text-align: right;
+            padding: 10px;
+        }
+
+        #main-image {
+            max-width: 50%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #ddd;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #sidebar a:hover {
+            background-color: #aaa;
+        }
+
+        #button {
+            width: 100px;
+            height: 10px; /* Adjust the height as needed */
+            background-color: #3498db; /* Button color */
+            color: #fff; /* Text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px; /* Add some space between the button and the circle */
+        }
+
     
